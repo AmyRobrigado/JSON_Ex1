@@ -25,13 +25,13 @@
                         <a class="nav-link" aria-current="page" href="/pages/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/pages/todo.html">To-Do</a>
+                        <a class="nav-link" href="/pages/todo.html">To-Do</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/pages/new_todo.html">New To-Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pages/edit-todo.html">New To-Do</a>
+                        <a class="nav-link active" href="/pages/edit-todo.html">New To-Do</a>
                     </li>
                 </ul>
             </div>
@@ -44,24 +44,24 @@
             <div class="row">
                 <!-- Text-Form -->
                 <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary" type="button" id="loremBtn">Button</button>
-                    <select class="form-select" aria-label="Default select example">
-
-                    </select>
+                    <input type="text" class="form-control" placeholder="Add User" aria-label="Add User" aria-describedby="basic-addon2" id="addUserInput">
+                    <button class="btn btn-outline-secondary" type="button" id="updateBtn">Update</button>
                 </div>
             </div>
 
             <!-- Text-Field -->
             <div class="container">
                 <div class="row">
-                    <div id="textField">
-
+                    <div id="textField" style="text-align: center;">
+                        
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="todo.js"></script>
+    <script src="/scripts/todo.js"></script>
+    <script src="/scripts/new_todo.js"></script>
+    <script src="/scripts/edit-todo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
