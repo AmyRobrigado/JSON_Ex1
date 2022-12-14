@@ -31,7 +31,7 @@
                         <a class="nav-link" href="/pages/new_todo.html">New To-Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/pages/edit-todo.html">New To-Do</a>
+                        <a class="nav-link active" href="/pages/edit-todo.html">Edit To-Do</a>
                     </li>
                 </ul>
             </div>
@@ -46,10 +46,9 @@
                 <div class="input-group mb-3">
                     <div class="mx-auto">
                         <input type="text" class="form-control-sm" placeholder="Id" aria-label="userId"
-                            aria-describedby="basic-addon2" id="updateInput">
-                        <button class="btn btn-outline-info" type="button" id="retrieveeBtn">Retrieve</button>
-                        <button class="btn btn-outline-warning" type="button" id="cancelBtn">Cancel</button>
-                        <button class="btn btn-outline-danger" type="button" id="updateBtn">Update</button>
+                            aria-describedby="basic-addon2" id="infoInput">
+                        <button class="btn btn-outline-info" type="button" id="retrieveBtn">Retrieve</button>
+
                     </div>
                 </div>
             </div>
@@ -61,9 +60,15 @@
 
                     </div>
                     <div style="text-align: center;">
-                        <p id="idPara">ID:</p>
-                        <p id="titlePara">Title:</p>
-                        <p id="completePara">Completed:</p>
+                        <input type="text" class="form-control mb-3" aria-label="title" aria-describedby="basic-addon2"
+                            id="idPara">
+                        <input type="text" class="form-control mb-3" aria-label="title" aria-describedby="basic-addon2"
+                            id="titlePara">
+                        <input type="text" class="form-control mb-3" aria-label="title" aria-describedby="basic-addon2"
+                            id="completePara">
+
+                        <button class="btn btn-outline-danger" type="button" id="updateBtn">Update</button>
+                        <button class="btn btn-outline-warning" type="button" id="cancelBtn">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -77,8 +82,6 @@
             </div>
         </div>
     </main>
-    <script src="/scripts/todo.js"></script>
-    <script src="/scripts/new_todo.js"></script>
     <script src="/scripts/edit-todo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
